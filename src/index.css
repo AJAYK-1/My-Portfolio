@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@layer utilities {
+    .hover-grow {
+        @apply transform transition-transform duration-300;
+    }
+    .hover-grow:hover {
+        @apply scale-110;
+    }
+}
+
+@layer utilities{
+    .span-gradient {
+        @apply bg-gradient-to-r from-orange-300 via-red-500 to-violet-600 bg-clip-text text-transparent;
+    }
+}
