@@ -13,4 +13,21 @@
     .span-gradient {
         @apply bg-gradient-to-r from-orange-300 via-red-500 to-violet-600 bg-clip-text text-transparent;
     }
+
+    .tech-stack {
+        @apply drop-shadow-[0_0_10px_#38bdf8] h-10 w-10 md:h-15 md:w-15 lg:h-20 lg:w-20;
+    }
+
+    .tech-stack:hover{
+        @apply animate-pulse drop-shadow-[0_0_15px_#38bdf8];
+    }
+
+    .skill-arrange {
+        @apply flex flex-col md:grid md:grid-cols-[200px_1fr] md:px-10 md:w-[90%] lg:w-[50%] md:mx-auto mt-2 items-center gap-5;
+    }
+
+    .tech-arrange {
+        @apply flex gap-8 border-t-2 md:border-t-0 pt-5;
+    }
+
 }

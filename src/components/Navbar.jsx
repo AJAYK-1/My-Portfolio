@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 
 function Navbar() {
@@ -15,7 +16,7 @@ function Navbar() {
 
                 <div className='hidden md:flex space-x-5 md:space-x-7'>
                     <a href="#"> About me </a>
-                    <a href="#"> Services </a>
+                    <a href="#"> Teck Stack </a>
                     <a href="#"> My works </a>
                     <a href="#"> Contact </a>
                 </div>
@@ -34,7 +35,7 @@ function Navbar() {
                     <button
                         className='hover:cursor-pointer'
                         onClick={() => setSideBar(!sideBar)}>
-                        click
+                        <GiHamburgerMenu className="text-2xl cursor-pointer" />
                     </button>
                 </div>
 
@@ -43,7 +44,7 @@ function Navbar() {
             {sideBar && (
                 <div
                     className='md:hidden h-200 w-2/3 space-y-8 text-xl flex flex-col justify-start  pt-10 pl-7 z-20 fixed right-0 text-white bg-[#161513]'>
-                    <a href="#"> About me </a>
+                    <a href="/about"> About me </a>
                     <a href="#"> Services </a>
                     <a href="#"> My works </a>
                     <a href="#"> Contact </a>

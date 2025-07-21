@@ -4,7 +4,7 @@ function Hero() {
 
     return (
         <>
-            <div className='flex flex-col items-center justify-center bg-[#161513] h-170 w-screen'>
+            <div className='flex flex-col items-center justify-center bg-[#161513] h-screen md:h-170 w-screen'>
 
                 <div className=''>
                     <img className='rounded-full h-60 w-60 hover-grow' src="/profileImg.jpg" alt="My Image" />
@@ -26,7 +26,7 @@ function Hero() {
                     <p> I'm a Full Stack Developer skilled in building responsive, dynamic web applications using MERN (MongoDB, Express.js, React.js, and Node.js) Stack. </p>
                 </div>
 
-                <div className='text-white flex justify-between space-x-7 mt-4'>
+                <div className='text-white flex justify-between space-x-7 mt-4 mb-10'>
                     <button className='rounded-4xl p-3 w-40 font-medium hover-grow
                     bg-gradient-to-r from-purple-700 via-red-500 to-orange-400'> Get in touch </button>
                     <button className='rounded-4xl p-3 w-40 font-medium border-2 hover-grow'> My Resume </button>
