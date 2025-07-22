@@ -2,10 +2,11 @@ import React from 'react'
 
 function Skills() {
     return (
-        <div>
-            <div className='flex flex-col justify-center bg-[#161513] py-10 w-screen text-white'>
-                <div className='flex justify-center  pt-10 mt-20 mb-10 h-20 '>
-                    <h1 className='text-3xl md:text-4xl lg:text-6xl font-mono font-bold'> Tech Stack </h1>
+        <>
+            <div id='Tech-stack' className='flex flex-col justify-center bg-[#161513] py-10 w-screen text-white'>
+                <div className='flex items-center justify-center  pt-10 mt-20 mb-10 h-20 '>
+                    <h1 className='relative z-10 text-3xl md:text-4xl lg:text-6xl font-mono font-bold'> Tech Stack </h1>
+                    <img className='absolute w-25 z-0 mt-8 md:w-30 md:mt-10 lg:w-40 lg:mt-12' src="/vswish.png" alt="" />
                 </div>
 
                 <div className='flex flex-col gap-5 md:justify-center'>
@@ -141,7 +142,7 @@ function Skills() {
                 </div>
 
             </div>
-        </div>
+        </>
     )
 }
 

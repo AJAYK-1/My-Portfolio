@@ -4,17 +4,18 @@ import React from 'react'
 function MyWorks() {
     return (
         <>
-            <div className='flex flex-col bg-[#161513] w-screen py-10 text-white'>
-                <div className='flex items-center justify-center mt-10 mb-10'>
-                    <h1 className='text-3xl md:text-4xl lg:text-6xl font-bold font-mono'> My Latest works </h1>
+            <div id='My-works' className='flex flex-col bg-[#161513] w-screen py-10 text-white'>
+                <div className='flex items-center justify-center mt-10 h-50'>
+                    <h1 className='text-3xl md:text-4xl lg:text-6xl font-bold font-mono z-10'> My Latest works </h1>
+                    <img className='absolute w-25 z-0 mt-8 md:w-30 md:mt-10 lg:w-40 lg:mt-12' src="/rrswish.png" alt="" />
                 </div>
 
-                <div className='flex flex-col w-[70%] mx-auto gap-10 lg:justify-between lg:flex-row lg:w-[85%]'>
+                <div className='flex flex-col w-[70%] mx-auto gap-10 lg:justify-between lg:flex-row lg:w-[80%]'>
 
                     {/* DocNet */}
                     <div className='hover-grow rounded-2xl hover:border-4 hover:border-violet-600 lg:w-[60%] lg:h-[80%]'>
                         <div >
-                            <img className='rounded-t-xl' src="/earchitects.png" alt="Project Image" />
+                            <img className='rounded-t-xl' src="/docnet.png" alt="Project Image" />
                         </div>
                         <div className='text-justify p-5 bg-[#27202d] rounded-b-xl space-y-5'>
                             <h1 className='font-bold text-2xl lg:text-3xl'>
@@ -35,7 +36,7 @@ function MyWorks() {
                         {/* Movie-Mate */}
                         <div className='hover-grow rounded-2xl hover:border-4 hover:border-violet-600'>
                             <div >
-                                <img className='rounded-t-xl' src="/earchitects.png" alt="Project Image" />
+                                <img className='rounded-t-xl' src="/moviemate.png" alt="Project Image" />
                             </div>
                             <div className='text-justify p-5 bg-[#27202d] rounded-b-xl space-y-5'>
                                 <h1 className='font-bold text-2xl lg:text-xl'>

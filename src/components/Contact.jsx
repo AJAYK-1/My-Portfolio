@@ -1,13 +1,39 @@
 import React from 'react'
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 
 function Contact() {
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", import.meta.env.VITE_ACCESS_KEY);
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            toast.success("Email send successfully...")
+            event.target.reset();
+        } else {
+            console.log("Error", data);
+            toast.error("Error sending email...")
+        }
+    };
+
     return (
         <>
-            <div className='flex flex-col bg-[#161513] w-screen py-10 text-white'>
+            <div id='Contact' className='flex flex-col bg-[#161513] w-screen py-10 text-white'>
                 <div className='flex items-center justify-center mt-10 mb-10'>
-                    <h1 className='text-3xl md:text-4xl lg:text-6xl font-bold font-mono'> Get in touch </h1>
+                    <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold font-mono z-10'> Get in touch </h1>
+                    <img className='absolute w-25 z-0 mt-8 md:w-30 md:mt-10 lg:w-40 lg:mt-12' src="/swish.png" alt="" />
                 </div>
 
                 <div className='py-10 lg:flex lg:justify-evenly lg:p-5'>
@@ -27,24 +53,31 @@ function Contact() {
                         </div>
                     </div>
 
-                    <div className='flex flex-col w-[80%] lg:w-[40%] mx-auto my-5 space-y-3'>
+
+                    <form onSubmit={onSubmit}
+                        className='flex flex-col w-[80%] lg:w-[40%] mx-auto my-5 space-y-3'>
+
                         <label htmlFor="Name"> Your Name: </label>
-                        <input
+                        <input name='name'
                             className='bg-gray-700 p-3 rounded-lg'
-                            type="text" placeholder='Enter your Name...' />
+                            type="text" placeholder='Enter your Name...' required/>
+
                         <label htmlFor="Email"> Your Email: </label>
-                        <input
+                        <input name='email'
                             className='bg-gray-700 p-3 rounded-lg'
-                            type="email" placeholder='Enter your email...' />
+                            type="email" placeholder='Enter your email...' required/>
+
                         <label htmlFor="Message"> Your Message: </label>
-                        <textarea
+                        <textarea type='text'
                             className='bg-gray-700 p-3 h-40 rounded-lg'
-                            name="message" placeholder='Enter your message here...' />
-                        <button
+                            name="message" placeholder='Enter your message here...' required/>
+
+                        <button type='submit'
                             className='rounded-4xl p-3 w-40 font-medium hover-grow mt-3 hover:cursor-pointer
                             bg-gradient-to-r from-purple-700 via-red-500 to-orange-400'> Submit
                         </button>
-                    </div>
+
+                    </form>
 
                 </div>
             </div>

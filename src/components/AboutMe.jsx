@@ -4,10 +4,11 @@ import React from 'react'
 function AboutMe() {
     return (
         <>
-            <div className='flex flex-col justify-center  w-screen bg-[#161513]'>
+            <div id='About-me' className='flex flex-col justify-center  w-screen bg-[#161513]'>
 
-                <div className='text-white font-bold font-mono text-4xl lg:text-6xl mb-5 flex justify-center h-20'>
-                    <h1> About Me </h1>
+                <div className='text-white font-bold font-mono text-4xl md:text-5xl lg:text-6xl mb-10 flex items-center justify-center h-20'>
+                    <h1 className='relative z-10'> About Me </h1>
+                    <img className='absolute w-25 z-0 mt-8 md:w-30 md:mt-10 lg:w-40 lg:mt-12' src="/rswish.png" alt="" />
                 </div>
 
                 <div className='flex flex-col md:justify-center md:flex-row px-10 md:px-0 gap-6 '>
@@ -32,10 +33,6 @@ function AboutMe() {
                         <p className="mt-4">
                             With a solid foundation in full-stack development, I'm eager to contribute to impactful projects that blend performance, clean design, and real-world usability.
                         </p>
-                        {/* <div className='text-white font-bold text-xl'>
-                            <p> Frontend </p>
-                        </div> */}
-
                     </div>
                 </div>
 

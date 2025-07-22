@@ -14,17 +14,18 @@ function Footer() {
                 </div>
 
                 <div className='flex w-[100%] md:w-[40%] justify-center p-5 space-x-3'>
-                    <FaInstagram className='w-10 h-10' onClick={() => window.open('https://www.instagram.com/njan.ajay/')} />
-                    <FaFacebook className='w-10 h-10' onClick={() => window.open('https://www.facebook.com/profile.php?viewas=100000686899395&id=100055668733845')} />
-                    <FaLinkedin className='w-10 h-10' onClick={() => window.open('www.linkedin.com/in/ajaykumartp')} />
-                    <GrGithub className='w-10 h-10' onClick={() => window.open('https://github.com/AJAYK-1')} />
+                    <FaInstagram className='w-10 h-10 hover-grow' onClick={() => window.open('https://www.instagram.com/njan.ajay/')} />
+                    <FaFacebook className='w-10 h-10 hover-grow' onClick={() => window.open('https://www.facebook.com/profile.php?viewas=100000686899395&id=100055668733845')} />
+                    <FaLinkedin className='w-10 h-10 hover-grow' onClick={() => window.open('https://www.linkedin.com/in/ajaykumartp')} />
+                    <GrGithub className='w-10 h-10 hover-grow' onClick={() => window.open('https://github.com/AJAYK-1')} />
                 </div>
 
-                <div className='md:w-[20%] lg:w-[30%] flex md:flex-col lg:flex-row lg:justify-center p-5 gap-6 md:gap-0 lg:gap-6'>
-                    <a href=''> ▷Home </a>
-                    <a href=''> ▷About me </a>
-                    <a href=''> ▷Tech Stack </a>
-                    <a href=''> ▷Get in touch </a>
+                <div className='md:w-[20%] lg:w-[40%] flex md:flex-col lg:flex-row justify-center p-5 gap-6 md:gap-0 lg:gap-6'>
+                    <a href='#Hero'> ▷Home </a>
+                    <a href='#About-me'> ▷About me </a>
+                    <a href='#Tech-stack'> ▷Tech Stack </a>
+                    <a href='#My-works'> ▷My Works </a>
+                    <a href='#Contact'> ▷Get in touch </a>
                 </div>
 
             </div>
