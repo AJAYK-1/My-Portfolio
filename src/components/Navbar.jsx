@@ -12,6 +12,7 @@ function Navbar() {
     const sideBarRef = useRef(null)
 
     useGSAP(() => {
+        if (sideBar == null) return
         if (sideBar) {
             SidebarOpen(sideBarRef)
         } else {
@@ -50,13 +51,13 @@ function Navbar() {
                     {sideBar ? (
                         <button
                             className='hover:cursor-pointer'
-                            onClick={() => setSideBar(!sideBar)}>
+                            onClick={() => setSideBar(false)}>
                             <FaTimes className='text-4xl mr-5' />
                         </button>
                     ) : (
                         <button
                             className='hover:cursor-pointer'
-                            onClick={() => setSideBar(!sideBar)}>
+                            onClick={() => setSideBar(true)}>
                             <GiHamburgerMenu className="text-4xl mr-5" />
                         </button>
                     )}
