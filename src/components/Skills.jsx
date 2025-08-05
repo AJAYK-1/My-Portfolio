@@ -40,6 +40,11 @@ function Skills() {
                                 alt='TailwindCSS'
                                 onClick={() => window.open('https://tailwindcss.com/')} />
 
+                            <img className='tech-stack'
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
+                                alt='TailwindCSS'
+                                onClick={() => window.open('https://redux.js.org/')} />
+
                             <img className='tech-stack' src="/gsaplogo.png" alt="GSAP"
                                 onClick={() => window.open('https://gsap.com/')} />
                         </div>

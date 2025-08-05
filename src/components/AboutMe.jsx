@@ -13,7 +13,7 @@ function AboutMe() {
 
                 <div className='flex flex-col md:justify-center md:flex-row px-10 md:px-0 gap-6 '>
 
-                    <div className='w-60  md:w-80 bg-red-400 rounded-xl'>
+                    <div className='w-60 md:w-80 bg-red-400 rounded-xl'>
                         <img
                             src="/profile.jpg"
                             alt="My Image"
