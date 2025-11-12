@@ -48,8 +48,8 @@ function Contact() {
                             </p>
                             <p className='flex items-center'> <FaEnvelope className="text-2xl mr-5 text-teal-300" />
                                 <a href="mailto:ajaykumartp10@gmail.com" className='hover:underline'>  ajaykumartp10@gmail.com </a> </p>
-                            <p className='flex items-center'> <FaPhone className="text-2xl mr-5 text-blue-500" /> +91-8289938749 </p>
-                            <p className='flex items-center'> <FaMapMarkerAlt className="text-2xl mr-5 text-red-500" /> Kochi, Kerala, India </p>
+                            <p className='flex items-center'> <FaPhone className="text-2xl mr-5 text-blue-500" /> <a href="tel:+91-8289938749" className='hover:underline'> +91-8289938749 </a> </p>
+                            <p className='flex items-center'> <FaMapMarkerAlt className="text-2xl mr-5 text-red-500" /> North Paravur, Ernakulam, Kerala, India </p>
                         </div>
                     </div>
 

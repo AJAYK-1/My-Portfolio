@@ -1,12 +1,51 @@
-# React + Vite
+# 🌐 Ajay Kumar T P | Full Stack Developer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my **Digital Portfolio**, a showcase of my work, skills, and projects as a **Full Stack Developer**.  
+Built using **React**, **Tailwind CSS**, and **Node.js**, this portfolio highlights my passion for creating modern, responsive, and interactive web applications.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 About the Project
 
-## Expanding the ESLint configuration
+This digital portfolio is designed to present my technical expertise, personal projects, and professional journey in a clean and user-friendly interface.  
+It serves as both an introduction to my work and a reflection of my ability to build scalable and aesthetic web applications.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- 💻 Fully responsive design built with Tailwind CSS  
+- ⚡ Smooth and interactive user experience using React  
+- 🧩 Modular and reusable components  
+- 🌙 Light, minimal, and developer-friendly design  
+- 🔗 Quick access to my projects, resume, and contact details  
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:** React, Tailwind CSS    
+**Deployment:** Render
+
+---
+
+## 🖼️ Screenshots / Demo
+
+![Homepage Screenshot](./public/portfolio.png)
+
+---
+
+## 📁 Folder Structure
+
+My-Portfolio/
+├── src/
+│   ├── components/
+│   │   └── pages
+│   ├── assets/
+│   ├── App.jsx
+│   ├── Main.jsx
+│   └── index.css
+├── public/
+├── package.json
+├── index.html
+└── README.md

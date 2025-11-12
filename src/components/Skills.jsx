@@ -12,9 +12,8 @@ function Skills() {
                 <div className='flex flex-col gap-5 md:justify-center'>
 
                     <div className='skill-arrange'>
-
                         <div>
-                            <h1 className='text-2xl md:text-3xl font-bold'>
+                            <h1 className='skill-heading'>
                                 <span className='span-gradient'> Frontend </span>
                             </h1>
                         </div>
@@ -42,19 +41,22 @@ function Skills() {
 
                             <img className='tech-stack'
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
-                                alt='TailwindCSS'
+                                alt='Redux Toolkit'
                                 onClick={() => window.open('https://redux.js.org/')} />
 
-                            <img className='tech-stack' src="/gsaplogo.png" alt="GSAP"
-                                onClick={() => window.open('https://gsap.com/')} />
-                        </div>
+                            <img className='tech-stack'
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactbootstrap/reactbootstrap-original.svg"
+                                alt='React-Bootstrap'
+                                onClick={() => window.open('https://react-bootstrap.github.io/')} />
 
+                            {/* <img className='tech-stack' src="/gsaplogo.png" alt="GSAP"
+                                onClick={() => window.open('https://gsap.com/')} /> */}
+                        </div>
                     </div>
 
                     <div className='skill-arrange'>
-
                         <div>
-                            <h1 className='text-2xl md:text-3xl font-bold'>
+                            <h1 className='skill-heading'>
                                 <span className='span-gradient'> Backend </span>
                             </h1>
                         </div>
@@ -62,26 +64,34 @@ function Skills() {
                         <div className='tech-arrange '>
                             <img className='tech-stack'
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-                                alt='Node JS'
+                                alt='Node.JS'
                                 onClick={() => window.open('https://nodejs.org/en')} />
 
                             <img className='tech-stack'
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
-                                alt=' Express JS'
+                                alt='Express.JS'
                                 onClick={() => window.open('https://expressjs.com/')} />
 
                             <img className='tech-stack'
+                                src="https://www.iconpacks.net/icons/free-icons-6/free-rest-api-blue-logo-icon-22099.png"
+                                alt='RESTful API'
+                                onClick={() => window.open('https://restfulapi.net/')} />
+
+                            <img className='tech-stack'
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg"
+                                alt='GraphQL'
+                                onClick={() => window.open('https://graphql.com/')} />
+
+                            {/* <img className='tech-stack'
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
                                 alt='php'
-                                onClick={() => window.open('https://www.php.net/')} />
+                                onClick={() => window.open('https://www.php.net/')} /> */}
                         </div>
-
                     </div>
 
                     <div className='skill-arrange'>
-
                         <div>
-                            <h1 className='text-2xl md:text-3xl font-bold'>
+                            <h1 className='skill-heading'>
                                 <span className='span-gradient'> Database </span>
                             </h1>
                         </div>
@@ -92,18 +102,16 @@ function Skills() {
                                 alt='MongoDB'
                                 onClick={() => window.open('https://www.mongodb.com/')} />
 
-                            <img className='tech-stack'
+                            {/* <img className='tech-stack'
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
                                 alt='MySql'
-                                onClick={() => window.open('https://www.mysql.com/')} />
+                                onClick={() => window.open('https://www.mysql.com/')} /> */}
                         </div>
-
                     </div>
 
                     <div className='skill-arrange'>
-
                         <div>
-                            <h1 className='text-2xl md:text-3xl font-bold'>
+                            <h1 className='skill-heading'>
                                 <span className='span-gradient'> Languages </span>
                             </h1>
                         </div>
@@ -114,13 +122,11 @@ function Skills() {
                                 alt='JavaScript'
                                 onClick={() => window.open('https://www.javascript.com/')} />
                         </div>
-
                     </div>
 
                     <div className="skill-arrange mb-10">
-
                         <div>
-                            <h1 className='text-2xl md:text-3xl font-bold'>
+                            <h1 className='skill-heading'>
                                 <span className='span-gradient'> Tools & Others </span>
                             </h1>
                         </div>
@@ -140,8 +146,17 @@ function Skills() {
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
                                 alt='Postman'
                                 onClick={() => window.open('https://www.postman.com/')} />
-                        </div>
 
+                            <img className='tech-stack'
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apollographql/apollographql-original.svg"
+                                alt='Apollo-Server'
+                                onClick={() => window.open('https://www.apollographql.com/docs/apollo-server')} />
+                                
+                            <img className='tech-stack'
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg"
+                                alt='Apollo-Server'
+                                onClick={() => window.open('https://www.docker.com/')} />
+                        </div>
                     </div>
 
                 </div>
